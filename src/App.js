@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import RoutePlanner from "./components/RoutePlanner";
+// import MapboxMap from "./components/MapboxMap";
+import "./App.css";
+import logo from "./image.png";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav className="App-nav">
+        <img src={logo} alt="Logo" className="logo" />
+      </nav>
+      <div className="App-content">
+        <header className="App-header">
+          <h1 className="heading">
+            Let's calculate the <span className="bold">distance</span> from maps
+          </h1>
+        </header>
+        <RoutePlanner />
+        {/* <MapboxMap /> */}
+      </div>
     </div>
   );
-}
+};
 
 export default App;

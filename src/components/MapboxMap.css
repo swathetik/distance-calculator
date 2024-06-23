@@ -1,0 +1,20 @@
+.map-container {
+  width: 800px; /* Adjusted width to make the map larger */
+  height: 700px; /* Adjusted height to make the map larger */
+  margin-left: 500px; /* Adds space between the form and the map */
+  margin-top: 170px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle black shadow */
+  border-radius: 20px; /* Oval shape */
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    height: 50vh; /* Adjusted height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .map-container {
+    height: 40vh; /* Further adjusted height for very small screens */
+  }
+}
